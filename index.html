@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Premium handwriting project opportunities — work from home, flexible project tracks and simple onboarding.">
+<title>VISHV Book Publisher — Handwriting Projects</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+:root{
+  --ink:#111827; --muted:#697386; --gold:#d99b16; --gold2:#f2c85b;
+  --cream:#fffaf0; --line:#eadfc8; --white:#fff;
+  --shadow:0 24px 70px rgba(31,41,55,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:#f7f7f5;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(234,223,200,.8)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-family:"Plus Jakarta Sans";font-weight:800;letter-spacing:-.6px}
+.logo{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(145deg,#fff0bd,#d79b17);box-shadow:inset 0 1px #fff,0 8px 20px rgba(217,155,22,.2);font-size:21px}
+.brand span{color:var(--gold)}
+.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;background:linear-gradient(135deg,#f5d477,#d99b16);font-weight:800;color:#1d1b16;box-shadow:0 12px 28px rgba(217,155,22,.22);transition:.25s}
+.nav-cta{padding:11px 20px;font-size:14px}
+.btn{padding:16px 28px;font-size:16px;border:0;cursor:pointer}
+.nav-cta:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(217,155,22,.28)}
+.hero{position:relative;overflow:hidden;padding:92px 0 70px;background:
+ radial-gradient(circle at 10% 10%,rgba(242,200,91,.20),transparent 31%),
+ radial-gradient(circle at 90% 15%,rgba(119,143,190,.14),transparent 30%),
+ linear-gradient(180deg,#fffdf8,#f8f6f0)}
+.hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid rgba(217,155,22,.13);border-radius:50%;right:-220px;top:90px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #ecdcae;background:#fffdf7;border-radius:999px;color:#73561a;font-weight:700;font-size:13px;margin-bottom:22px}
+.dot{width:8px;height:8px;border-radius:50%;background:#dca21c;box-shadow:0 0 0 5px rgba(220,162,28,.12)}
+h1{font-family:"Plus Jakarta Sans";font-size:clamp(42px,5.4vw,72px);line-height:1.04;letter-spacing:-3.4px;max-width:700px}
+.gold{color:#c99012}
+.hero-copy{font-size:18px;color:var(--muted);max-width:650px;margin:24px 0 30px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+.secondary{background:#fff;border:1px solid var(--line);box-shadow:0 8px 20px rgba(31,41,55,.05)}
+.trust{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.pill{padding:8px 12px;border-radius:10px;background:#fff;border:1px solid #ece4d4;color:#5e6675;font-size:13px;font-weight:600}
+.hero-card{position:relative;background:rgba(255,255,255,.82);border:1px solid #eadfc8;border-radius:28px;padding:25px;box-shadow:var(--shadow);z-index:2}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}
+.badge{font-size:12px;font-weight:800;color:#7b5b18;background:#fff3ce;padding:7px 10px;border-radius:9px}
+.hero-card h3{font-family:"Plus Jakarta Sans";font-size:23px}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.metric{padding:18px;border:1px solid #eee6d6;border-radius:16px;background:#fff}
+.metric strong{display:block;font-family:"Plus Jakarta Sans";font-size:24px;color:#c99012}
+.metric small{color:var(--muted)}
+.note{margin-top:14px;padding:14px;border-radius:14px;background:#faf7ee;color:#6b7280;font-size:13px}
+section{padding:88px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 42px}
+.kicker{color:#bd850e;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}
+h2{font-family:"Plus Jakarta Sans";font-size:clamp(30px,4vw,45px);line-height:1.15;letter-spacing:-1.8px;margin:9px 0 12px}
+.section-head p{color:var(--muted)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{background:#fff;border:1px solid #ebe3d3;border-radius:22px;padding:28px;box-shadow:0 10px 35px rgba(31,41,55,.05)}
+.icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:#fff3d3;font-size:23px;margin-bottom:22px}
+.feature h3{font-family:"Plus Jakarta Sans";font-size:19px;margin-bottom:9px}
+.feature p{color:var(--muted);font-size:15px}
+.tracks-wrap{background:#111827;color:#fff}
+.tracks-wrap .section-head p{color:#aeb7c7}
+.tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.track{border:1px solid rgba(255,255,255,.13);border-radius:24px;padding:27px;background:linear-gradient(160deg,#1a2230,#121823);position:relative;overflow:hidden}
+.track.featured{border-color:#d9a329;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.track.featured:before{content:"POPULAR";position:absolute;right:18px;top:18px;background:#e5ae32;color:#17130a;padding:5px 8px;border-radius:7px;font-size:10px;font-weight:900;letter-spacing:1px}
+.track .tag{color:#e6b338;font-size:11px;font-weight:900;letter-spacing:1.5px}
+.track h3{font-family:"Plus Jakarta Sans";font-size:26px;margin:8px 0 10px}
+.track p{color:#aeb7c7;font-size:14px;min-height:48px}
+.track ul{list-style:none;margin:23px 0}
+.track li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.10);display:flex;justify-content:space-between;color:#cbd2dd;font-size:14px}
+.track li b{color:#fff}
+.price{font-family:"Plus Jakarta Sans";font-size:34px;color:#f0bf4b;margin:18px 0}
+.track .btn{width:100%;font-size:14px;padding:14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:#fff;border:1px solid #ebe3d3;border-radius:22px;padding:28px}
+.step-num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#e4b33e;color:#1a170f;font-weight:900;margin-bottom:20px}
+.step h3{font-family:"Plus Jakarta Sans";font-size:18px;margin-bottom:8px}
+.step p{color:var(--muted);font-size:14px}
+.cta{margin:10px auto 88px;width:min(1120px,92%);padding:66px 35px;text-align:center;border-radius:30px;background:
+ radial-gradient(circle at 20% 20%,rgba(255,255,255,.45),transparent 30%),
+ linear-gradient(135deg,#fff6dc,#f7f5f0);border:1px solid #eadfc8;box-shadow:var(--shadow)}
+.cta p{color:var(--muted);max-width:600px;margin:12px auto 25px}
+footer{background:#0d1420;color:#9da7b7;padding:25px 0}
+.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:12px}
+.footer-brand{font-weight:800;color:#fff}
+.footer-brand span{color:#e3ae32}
+@media(max-width:850px){
+ .hero-grid{grid-template-columns:1fr;gap:38px}.hero{padding-top:62px}
+ .features,.tracks,.steps{grid-template-columns:1fr}
+ h1{letter-spacing:-2px}.mini-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+ .nav{height:68px}.brand{font-size:14px}.logo{width:34px;height:34px;font-size:18px}.nav-cta{padding:9px 13px;font-size:12px}
+ section{padding:65px 0}.hero{padding:50px 0 55px}.hero-copy{font-size:16px}
+ .hero-actions .btn{width:100%}.trust{justify-content:center}.pill{font-size:11px}
+ .mini-grid{grid-template-columns:1fr} .hero-card{padding:20px}.footer-row{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#">
+      <div class="logo">✍</div>
+      <div>VISHV <span>BOOK PUBLISHER</span></div>
+    </a>
+    <!-- Add your Telegram URL inside href="" -->
+    <a class="nav-cta" href="" target="_blank" rel="noopener">✈ Join Telegram</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><i class="dot"></i> Project enrollment is currently open</div>
+      <h1>Turn Your Handwriting Into a <span class="gold">Flexible Project</span> Opportunity.</h1>
+      <p class="hero-copy">Simple pen-and-paper assignments designed for people who prefer working from home, with clear instructions and structured project tracks.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#tracks">Explore Project Tracks <span>→</span></a>
+        <!-- Add your Telegram URL inside href="" -->
+        <a class="btn secondary" href="" target="_blank" rel="noopener">Connect on Telegram</a>
+      </div>
+      <div class="trust">
+        <span class="pill">✓ Work From Home</span>
+        <span class="pill">✓ Clear Instructions</span>
+        <span class="pill">✓ Flexible Tracks</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-top"><h3>Project Snapshot</h3><span class="badge">OPEN NOW</span></div>
+      <p style="color:var(--muted);font-size:14px">Choose a track based on your preferred project duration and daily writing target.</p>
+      <div class="mini-grid">
+        <div class="metric"><strong>7–15</strong><small>Days per track</small></div>
+        <div class="metric"><strong>7–15</strong><small>Pages / day</small></div>
+        <div class="metric"><strong>100+</strong><small>Pages on selected tracks</small></div>
+        <div class="metric"><strong>WFH</strong><small>Home-based format</small></div>
+      </div>
+      <div class="note">Tip: Always review the assignment terms, payment conditions and verification process before submitting any work.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Why people choose it</div>
+      <h2>Simple work. Clear process. No complicated setup.</h2>
+      <p>A clean project flow built around straightforward handwriting assignments.</p>
+    </div>
+    <div class="features">
+      <article class="feature"><div class="icon">🏠</div><h3>Work From Home</h3><p>Complete assigned writing tasks from the comfort of your own space without a fixed office setup.</p></article>
+      <article class="feature"><div class="icon">📋</div><h3>Ready-Made Scripts</h3><p>Receive source material and follow the provided formatting and handwriting instructions.</p></article>
+      <article class="feature"><div class="icon">🎓</div><h3>Beginner Friendly</h3><p>Projects are structured around clear steps so eligible newcomers can understand the workflow quickly.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="tracks-wrap" id="tracks">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Project options</div>
+      <h2>Pick the track that fits your pace.</h2>
+      <p>Three example project structures. Update the figures below to match your actual offer.</p>
+    </div>
+    <div class="tracks">
+      <article class="track">
+        <div class="tag">TRACK ALPHA</div><h3>7 Days Project</h3><p>A compact starter track for a manageable daily writing routine.</p>
+        <ul><li>Daily target <b>07 pages</b></li><li>Project volume <b>49 pages</b></li><li>Format <b>Home-based</b></li></ul>
+        <div class="price">₹24,000</div>
+        <a class="btn" href="">Select 7 Day Track</a>
+      </article>
+      <article class="track featured">
+        <div class="tag">HIGH VOLUME · TRACK BETA</div><h3>10 Days Project</h3><p>A balanced track for people comfortable with a higher daily writing target.</p>
+        <ul><li>Daily target <b>10 pages</b></li><li>Project volume <b>100 pages</b></li><li>Support <b>Orientation</b></li></ul>
+        <div class="price">₹30,000</div>
+        <a class="btn" href="">Select 10 Day Track</a>
+      </article>
+      <article class="track">
+        <div class="tag">TRACK GAMMA</div><h3>15 Days Project</h3><p>An extended track for participants seeking a larger assignment volume.</p>
+        <ul><li>Daily target <b>15 pages</b></li><li>Project volume <b>200+ pages</b></li><li>Support <b>Additional tiers</b></li></ul>
+        <div class="price">₹40,000</div>
+        <a class="btn" href="">Select 15 Day Track</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">How it works</div>
+      <h2>From joining to submission in 3 simple steps.</h2>
+      <p>Keep the journey clear for visitors and reduce unnecessary friction.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><div class="step-num">01</div><h3>Join the official channel</h3><p>Connect through your official Telegram link and review the latest project information.</p></article>
+      <article class="step"><div class="step-num">02</div><h3>Complete the assessment</h3><p>Follow the sample instructions and submit the requested handwriting sample if applicable.</p></article>
+      <article class="step"><div class="step-num">03</div><h3>Receive & submit work</h3><p>Work through your selected assignment and follow the stated quality and submission requirements.</p></article>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="kicker">Ready to explore?</div>
+  <h2>Start with the project details.</h2>
+  <p>Connect through your official Telegram channel to see current availability, instructions and applicable terms.</p>
+  <!-- Add your Telegram URL inside href="" -->
+  <a class="btn" href="" target="_blank" rel="noopener">✈ Join Official Telegram Channel</a>
+</div>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div class="footer-brand">VISHV <span>BOOK PUBLISHER</span></div>
+    <div>Ads managed by <strong style="color:#fff">AK GrowthX Media</strong></div>
+    <div>Landing page created by <strong style="color:#fff">AK GrowthX Media</strong></div>
+  </div>
+</footer>
+</body>
+</html>
